@@ -1,0 +1,482 @@
+/* CSS Reset pour éliminer les marges par défaut */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+    margin: 0;
+}
+/* Styles de base pour le body */
+.bodyTD {
+  font-family: 'Poppins', sans-serif;
+  color: #dfdfdf;
+  background-color: #585858;
+  margin: 0;
+  padding: 20px;
+  padding-left: 220px; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #dfdfdf;
+  background-color: #585858;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 1rem;
+  background-color: #403f46;  
+  position: fixed;
+  top : 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Styles pour le sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 165px;
+  height: 100%;
+  background-color: #403f46;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: rgba(244, 244, 244, 0.7); 
+}
+
+/* Styles pour les titres et le texte */
+h2, caption {
+  color: #e7e7e7;
+  margin-left: 20px; 
+}
+
+h1 {
+  color: #a1a1a1;
+  margin-top: 150px;
+  margin-left: 20px; 
+}
+
+.welcome {
+  background-color: #555555;
+  color: #cecece;
+  padding: 100px 250px;
+  margin: 0px 0;
+}
+
+.h2Index {
+  font-size: 32px;
+  display:block;
+  text-align: center;
+  position: relative;
+  bottom:100px;
+}
+
+p {
+  display: block;
+  position: relative;
+  top: 0px; 
+  line-height: 2.8;
+  margin-left: 20px; 
+}
+
+.pIndex {
+  color: #646464;
+  margin: 0px 0;
+  position: relative;
+  bottom:200px;
+}
+
+/* Styles pour les listes et tableaux */
+table {
+  background-color: #2e2e2e;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: #646464;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #403f46;
+  color: #fff;
+  text-align: center;
+  margin:0px 0;
+}
+
+img[alt="Logo de l'Universite de Cergy-Pontoise"] {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  transition: filter 0.3s ease;
+}
+
+/* Effet de survol sur le logo */
+img[alt="Logo de l'Universite de Cergy-Pontoise"]:hover {
+  filter: brightness(0.8);
+}
+
+img[alt="Logo HTML"] {
+  width: 100px;
+}
+
+img[alt="En construction"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+img[alt="Plan du site Web"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+footer span {
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.digit { background-color: lightblue; }   
+.uppercase { background-color: lightgreen; }   
+.lowercase { background-color: lightcoral; }    
+.other { background-color: white; }   
+table { border-collapse: collapse; width: 100%; }  
+th, td { border: 1px solid black; padding: 5px; text-align: center; }  
+th { background-color: #f2f2f2; }
+
+ul li {
+  color: #ffffff;
+}
+
+ol li {
+  color: #000000;
+}
+
+/* Navigation */
+.menu-gen {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Liste de navigation */
+.menu-gen ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ã‰lÃ©ments de la liste */
+.menu-gen ul li {
+  margin: 0 10px;
+}
+
+/* Liens de navigation */
+.menu-gen ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.menu-gen ul li a:hover {
+  color: #E0E0E0;
+  cursor: pointer;
+}
+
+.menu-gen img.frenchmenu {
+  width: 100px;
+  margin-left: 600px;
+}
+
+.menu-gen img.englishmenu {
+  width: 100px;
+  margin-left: auto;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -135px;
+  visibility: hidden;
+}
+
+.anchor-ascii {
+  display: block;
+  position: relative;
+  top: -138px;
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cacher le menu toggle par défaut */
+.menu-toggle {
+  display: none;
+}
+
+/* Styles de base pour le bouton de menu, caché par défaut */
+.menu-btn {
+display: none;  /* Caché par défaut */
+cursor: pointer;
+position: fixed;
+top: 10px;
+right: 10px;
+z-index: 1500;
+font-size: 50px;
+background-color: #007bff;
+color: white;
+padding: 10px;
+border: none;
+}
+
+
+/* Media query pour les petits écrans */
+@media (max-width: 1080px) {
+.menu-btn {
+    display: block; /* Affiche le bouton de menu sur petits écrans */
+}
+
+.menu-gen {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #403f46; /* Fond semi-transparent noir */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center; /* Centre les liens horizontalement */
+    overflow-y: auto; /* Permet le défilement si nécessaire */
+}
+
+.menu-gen ul {
+    flex-direction: column; /* Affichage vertical des liens */
+    justify-content: center; /* Centre les liens verticalement */
+    padding-top: 600px; /* Espace en haut pour le bouton menu */
+}
+
+.menu-gen ul li {
+    width: 100%; /* Les liens prennent toute la largeur */
+    margin: 20px 0; /* Espacement vertical entre les liens */
+}
+
+.menu-gen ul li a {
+    font-size: 68px; /* Taille de police plus grande pour mobile */
+    color: white; /* Couleur des liens pour mobile */
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte */
+}
+
+.menu-toggle:checked + .menu-btn + .menu-gen {
+    display: block; /* Montre le menu quand la checkbox est cochée */
+}
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px; /* Ajustez en fonction de votre design */
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #001225;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #000811;
+}
+
+/* Style de base pour la liste principale */
+.sitemap1 {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style pour chaque élément de la liste principale */
+.sitemap1 > li {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* Style pour la liste secondaire */
+.sitemap2 {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Style pour chaque élément de la liste secondaire */
+.sitemap2 > li {
+  margin-bottom: 10px;
+}
+
+/* Style pour les liens */
+.sitemap1 a, .sitemap2 a {
+  text-decoration: none;
+  color: #ffffff; /* Couleur du texte */
+  transition: color 0.3s, text-decoration 0.3s; /* Transition de couleur et de soulignement au survol */
+}
+
+/* Style pour les liens au survol */
+.sitemap1 a:hover, .sitemap2 a:hover {
+  color: #007bff; /* Couleur du texte au survol */
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Style pour le lien "ICI" */
+.site-link {
+  color: #ffffff; /* Couleur du texte */
+  text-decoration: underline; /* Supprimer le soulignement par défaut */
+}
+
+.site-link:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+.btn{
+  height: 85px;
+  width: 85px;
+  background: rgb(212, 212, 212);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor:pointer;
+}
+.icone{
+  width: 40px;
+}
+
+.menu {
+  height: 60px;
+  list-style: none;
+  padding: 10px;
+  margin: 40px;
+}
+
+.menu li {
+  float: left;
+  width: 200px;
+}
+
+.menu li a:link, .menu li a:visited {
+  display: block;
+  color: #ffffff;
+  background: #403f46;
+  padding: 6px 10px;
+  border-right: 1px solid #403f46;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu li a:hover {background-color: #1a1a1a;}
+.menu li a:active {background-color: #403f46;}
+
+.menu .sousmenu {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.menu .sousmenu li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.menu .sousmenu li a:link, .menu li a:visited {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #403f46;
+}
+
+.menu .sousmenu li a:hover {
+  background-color: #1a1a1a;
+}
+
+.menu li:hover .sousmenu {
+  display: block;
+}
+label,input,h3{
+  margin-left: 20px; 
+}
